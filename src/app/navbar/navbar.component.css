@@ -8,6 +8,7 @@
   height: 108px;
   align-items: center;
   width: 100%;
+  padding-bottom: 20px;
 }
 
 .navbar-logo-container {
@@ -40,13 +41,23 @@
 }
 
 .navbar-item-black {
-  color: black
+  color: black;
+}
+
+.navbar-item-black-active {
+  color: black;
+  font-weight: bold;
+}
+
+.navbar-item-orange-active {
+  color: #fe663a !important;
+  font-weight: bold;
 }
 
 .navbar-item {
   color: inherit;
   font-size: 0.9em;
-  padding: 10px 8px;
+  padding: 5px 8px;
 }
 
 .navbar-button-container {
