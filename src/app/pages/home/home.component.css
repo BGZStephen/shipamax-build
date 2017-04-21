@@ -1,0 +1,17 @@
+.main-container {
+  display: block;
+  max-height: 100vh;
+  min-height: 700px;
+  position: relative;
+  top: -108px;
+  margin-bottom: -108px;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+  overflow: hidden;
+}
+
+video {
+  display: inline;
+  object-fit: cover;
+}
