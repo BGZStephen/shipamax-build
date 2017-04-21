@@ -1,3 +1,13 @@
-<p>
-  navbar works!
-</p>
+<div class="navbar-container">
+  <div class="navbar">
+    <div class="navbar-logo-container">
+      <img class="navbar-logo" src="assets/shipamax/images/logo-dark.png" [routerLink]="['/']">
+    </div>
+    <ul class="navbar-list">
+      <li class="navbar-item" [routerLink]="['product']">Product</li>
+      <li class="navbar-item" [routerLink]="['pricing']">Pricing</li>
+      <li class="navbar-item" [routerLink]="['guides']">Guides</li>
+    </ul>
+    <button class="navbar-button">Free Sign Up</button>
+  </div>
+</div>
