@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  modalVisible: boolean = false;
+
+  constructor() {  }
+
+  toggleModal() {
+    if(this.modalVisible) {
+      return {"visibility": "visible", "opacity": "1"}
+    } else {
+      return {"visibility": "hidden", "opacity": "0"}
+    }
+  }
 
   ngOnInit() {
   }
-
 }

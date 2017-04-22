@@ -8,8 +8,19 @@ import { ViewEncapsulation, Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  modalVisible: boolean = false;
+
   constructor() {
 
+
+  }
+
+  toggleModal() {
+    if(this.modalVisible) {
+      return {"visibility": "visible", "opacity": "1"}
+    } else {
+      return {"visibility": "hidden", "opacity": "0"}
+    }
   }
 
   ngOnInit() {

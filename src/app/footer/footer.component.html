@@ -1,6 +1,6 @@
 <div class="footer-container">
   <p class="footer-description">Shipamax enables you to internally share fleet openings & the commercial status of each ship. Details can be accessed in real-time by the whole team, across multiple locations.</p>
-  <button class="footer-button">Free Sign Up</button>
+  <button class="footer-button" (click)="modalVisible = !modalVisible">Free Sign Up</button>
   <div class="footer-bar-container">
     <div class="footer-copyright-container">
       <p class="copyright-description">© 2016 Shipamax Ltd, 1 Sekforde Street, EC1R 0BE, London (UK)</p>
@@ -11,5 +11,19 @@
       <a class=" fa fa-twitter social-item"></a>
       <a class=" fa fa-linkedin social-item"></a>
     </div>
+  </div>
+</div>
+<div class="modal-container" [ngStyle]="toggleModal()">
+  <div class="form-container">
+    <a class="fa fa-times fa-2x" (click)="modalVisible = !modalVisible"></a>
+    <img class="modal-logo" src="/assets/shipamax/images/logo-dark.png">
+    <h2 class="modal-header">Get started with a free account</h2>
+    <form class="modal-form">
+      <input type="text" name="name" class="modal-form-input" placeholder="Name">
+      <input type="text" name="name" class="modal-form-input" placeholder="Email">
+      <input type="text" name="name" class="modal-form-input" placeholder="Company">
+      <input type="text" name="name" class="modal-form-input" placeholder="Phone">
+      <button class="modal-form-button">Go<a class="fa fa-arrow-right"></a></button>
+    </form>
   </div>
 </div>

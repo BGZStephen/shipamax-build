@@ -9,7 +9,21 @@
       <img class="navbar-logo" src="assets/shipamax/images/logo-dark.png" [routerLink]="['/']">
     </div>
     <div class="navbar-button-container">
-      <button class="navbar-button">Free Sign Up</button>
+      <button class="navbar-button" (click)="modalVisible = !modalVisible">Free Sign Up</button>
     </div>
+  </div>
+</div>
+<div class="modal-container" [ngStyle]="toggleModal()">
+  <div class="form-container">
+    <a class="fa fa-times fa-2x" (click)="modalVisible = !modalVisible"></a>
+    <img class="modal-logo" src="/assets/shipamax/images/logo-dark.png">
+    <h2 class="modal-header">Get started with a free account</h2>
+    <form class="modal-form">
+      <input type="text" name="name" class="modal-form-input" placeholder="Name">
+      <input type="text" name="name" class="modal-form-input" placeholder="Email">
+      <input type="text" name="name" class="modal-form-input" placeholder="Company">
+      <input type="text" name="name" class="modal-form-input" placeholder="Phone">
+      <button class="modal-form-button">Go<a class="fa fa-arrow-right"></a></button>
+    </form>
   </div>
 </div>
