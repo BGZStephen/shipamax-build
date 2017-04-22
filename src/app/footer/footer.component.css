@@ -13,6 +13,7 @@
   border: none;
   border-radius: 5px;
   color: white;
+  cursor: pointer;
   display: block;
   font-size: 1.3em;
   margin: 40px auto;
@@ -60,6 +61,7 @@
   padding: 30px 10px;
   position: fixed;
   right: 0;
+  transition: all 0.5s ease;
   width: 100%;
 }
 
@@ -119,9 +121,10 @@
 }
 
 .fa-times {
+  cursor: pointer;
+  left: 20px;
   position: absolute;
   top: 20px;
-  left: 20px;
 }
 
 

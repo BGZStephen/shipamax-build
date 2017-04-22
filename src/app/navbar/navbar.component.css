@@ -57,6 +57,7 @@
   color: inherit;
   font-size: 0.9em;
   padding: 5px 8px;
+  cursor: pointer;
 }
 
 .navbar-button-container {
@@ -67,6 +68,7 @@
 .navbar-button {
   background: #fe663a;
   color: white;
+  cursor: pointer;
   display: none;
   margin-left: auto;
   margin-right: 30px;
@@ -145,10 +147,11 @@
 }
 
 .fa-times {
+  cursor: pointer;
   font-size: 1.6em;
+  left: 20px;
   position: absolute;
   top: 20px;
-  left: 20px;
 }
 
 @media (min-width: 768px) {
