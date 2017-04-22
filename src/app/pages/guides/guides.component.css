@@ -1,0 +1,52 @@
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.guides-header {
+  font-size: 1.8em;
+  margin: 80px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.guides-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+}
+
+.guides-item {
+  color: white;
+  padding: 35px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.guides-description {
+  font-size: 1.6em;
+  margin-top: 120px;
+}
+
+.guides-1 {
+  background: linear-gradient(135deg, #23B0FF 0%,#67C8FF 100%);
+}
+
+.guides-2 {
+  background: linear-gradient(135deg, #EC8600 0%,#FFA020 100%);
+}
+
+.guides-3 {
+  background: linear-gradient(135deg, #00C776 0%,#25DC92 100%);
+}
+
+@media (min-width: 768px) {
+  .guides-item {
+    width: 32.5%;
+    margin-bottom: 0px;
+  }
+}
